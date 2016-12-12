@@ -1,0 +1,5 @@
+2012mar27
+
+intervaldisplayrefresh.exe was initialy developed in folder C:\spoirier\oifii-org\httpdocs\ns-org\nsd\ar\cp\cpp_intervaldisplayrefresh\intervaldisplayrefresh\Release
+
+sp.

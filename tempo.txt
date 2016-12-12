@@ -1,0 +1,11 @@
+2012mar25
+
+tempo.exe comes from marsyas project applications folder 
+C:\spoirier\oifii-org\httpdocs\ns-org\nsd\ar\cp\music_marsyas\marsyas\build\bin\Release
+
+tempo.exe estimates the tempo for a specified wavefile
+
+tempo.exe has been included in here for integration with spibmpdetect as an alternative
+to (and comparison with) the class defined BMPDetect.cpp/.h
+
+spi.

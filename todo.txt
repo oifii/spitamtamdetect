@@ -1,0 +1,6 @@
+todo:
+
+-record tam tam sample, i.e. 10 to 20 sec
+-find tam tam peaks
+-split in segments around peaks
+

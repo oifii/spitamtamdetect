@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>interval display refresh</title>
+<script language="JavaScript" type="text/javascript">
+var text="272727";
+//var location = "C:\\spoirier\\oifii-org\\httpdocs\\ns-org\\nsd\\ar\\cp\\html_intervaldisplayrefresh\\mic_medianTempo.txt";
+var location = "C:\\spoirier\\oifii-org\\httpdocs\\ns-org\\nsd\\ar\\cp\\audio_spi\\spibpmdetect\\Release\\mic_medianTempo.txt";
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+function updateinnertext()
+{
+	var tempFile = fso.OpenTextFile(location,1, false, 0);
+	if (tempFile != null) 
+	{
+		var line = tempFile.ReadLine();
+		tempFile.Close();
+		
+		text = line;
+		
+		htmlelement = document.getElementById("myID");
+		htmlelement.innerText = text;
+	} 
+}
+</script>
+<style type="text/css">
+span {
+	font-family: 'Arial';
+	font-weight: bold;
+	color: #000000;
+	font-size: 72pt;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF" onload="setInterval('updateinnertext()',1000);">
+<span>&nbsp; <span class="S1" id="myID">333</span><br />
+</body>
+</html>
